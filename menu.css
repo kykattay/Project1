@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+ul {
+    overflow: hidden;
+}
+header ul a {
+    display: block;
+}
+
+}

@@ -2,6 +2,9 @@
 	margin:0;
 	padding:0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #DEDDD9;
     font-family: 'Poppins', 'sans serif';
@@ -68,14 +71,24 @@ button {
     border-radius: 12px;
     
 }
+img {
+    width: 600px;
+}
 
 .product {
     display: flex;
     margin-left: 150px;
-    margin-top: 160px;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    margin-right:300px;
+    align-items: center;
 }
 .product h2 {
     font-size: 35px;
+    padding-bottom: 10px;
+}
+.product_info p{
+    padding-bottom: 15px;
 }
 
 .features {
@@ -88,20 +101,20 @@ button {
     justify-content: space-evenly;
 }
 .feature1 {
-    width: 270px;
+    width: 280px;
     background: #ffffff;
     border-radius: 40px;
     padding: 18px;
     
 }
 .feature2 {
-    width: 270px;
+    width: 280px;
     background: #ffffff;
     border-radius: 40px;
     padding: 18px;
 }
 .feature3 {
-    width: 270px;
+    width: 280px;
     background: #ffffff;
     border-radius: 40px;
     padding: 18px;
@@ -128,15 +141,21 @@ button {
     background-color: #D3BBAF;
     width: 800px;
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     margin-top: 200px;
     margin-left: 330px;
     text-align: center;
     font-size: 16px;
+    border-radius: 25px;
 }
 .contact h2 {
     font-weight: 500;
     font-size: 30px;
+}
+.contact p {
+    width: 350px;
+    text-align: center;
+    padding-left: 220px;
 }
 input {
     width:450px;
@@ -158,6 +177,7 @@ input {
     margin-left: 390px;
     margin-top: 30px;
     font-weight: 600;
+    padding-bottom: 60px;
 }   
 .footer {
     background-color:#D3BBAF;
@@ -166,24 +186,116 @@ input {
     padding: 20px;
 }
 
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 768px) {
     header {
         height:30px;
     }
     h1 {
         padding-top: 10px;
         padding-left:10px;
-        width: 40px;
+        width: 100%;
         font-size: 10px;
     }
     nav span {
-        width: 150px;
-        padding-left: 15px;
+        width: 50%;
+        padding-left: 0;
         font-family: 'Poppins', 'sans serif';
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 25px;
+        font-weight: 550;
+        
     }
     nav {
         flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    nav a {
+        justify-content: center;
+    }
+    ul {
+        flex-direction: column;
+        padding-right: 0;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    .bars {
+        display: none;
+    }
+    li {
+        padding: 8px;
+    }
+
+    .product {
+        flex-direction: column;
+        margin: 50px;
+        margin-top: 200px;  
+        text-align: center;
+        
+    }
+    img {
+        width: 350px;
+        padding-top: 50px;
+    }
+    .features {
+        flex-direction: column;
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center; 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .feature1, .feature2, .feature3 {
+        width:200px;
+        height: 200px;
+        font-size: 12px;
+        padding-bottom: 20px;
+        margin: 10px;  
+    }
+    .feature-header {
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .notes {
+        font-size: 15px;
+        font-weight: 600;
+        padding-bottom: 8px;
+    }
+    .about-the-creators {
+        padding-top:100px;
+        text-align: center;
+        width: 300px;
+        padding-left: 40px;
+        font-size: 14px;
+        justify-content: center;
+    }
+    .about-the-creators h2 {
+        font-weight: 500;
+    }
+    .contact {
+        width: 280px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 80px;
+        margin-left: 27px;
+        font-size: 13px;
+        justify-content: center;
+    }
+    .contact p {
+        width: 240px;
+        padding-left: 30px;
+        justify-content: center;
+    }
+    input {
+        width: 220px;
+    }
+    .location-grid {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        justify-content: center;
+
     }
 }
